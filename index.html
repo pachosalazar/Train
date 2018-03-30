@@ -10,15 +10,89 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
+
+<br>
+<br>
 <div class="container">
+  <div class="jumbotron" >
+   <h1>Check for your next trip</h1>
+   <h2>The best way to travel</h2>
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 box-shadow">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Train information</h4>
+      </div>
+      <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Train Name</th>
+              <th scope="col">Destination</th>
+              <th scope="col">frequency(min)</th>
+              <th scope="col">Next Arrival</th>
+              <th scope="col">Minutes Away</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <td>Thornton</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+              <td>the Bird</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>the Bird</td>
+              </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>the Bird</td> 
+              </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>    
+</div>
+<br>
+
+<div class="container">
+ <div class="jumbotron" >
     <form>
+      <div class="text-center">
+        <P>Add Train</P>
+      </div>
         <div class="form-group">
-          <label for="train">train</label>
+          <label for="train">Train</label>
           <input  class="form-control" id="train"  placeholder="Enter Train">
         </div>
         <div class="form-group">
           <label for="destination">Destination</label>
-          <input type="destination" class="form-control" id="destination" placeholder="destination">
+          <input type="destination" class="form-control" id="destination" placeholder="Destination">
         </div>
         <div class="form-group">
             <label for="time">First Train Time</label>
@@ -30,6 +104,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
+ </div>
 </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
