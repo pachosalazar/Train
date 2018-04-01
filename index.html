@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="assets/css/style.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
   </head>
   <body>
 
@@ -38,43 +39,6 @@
               <th scope="col">Minutes Away</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-              <td>Thornton</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-              <td>the Bird</td>
-            </tr>
-            <tr>
-                <th scope="row">4</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>the Bird</td>
-              </tr>
-            <tr>
-                <th scope="row">5</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>the Bird</td> 
-              </tr>
-          </tbody>
         </table>
     </div>
   </div>    
@@ -88,22 +52,22 @@
         <P>Add Train</P>
       </div>
         <div class="form-group">
-          <label for="train">Train</label>
-          <input  class="form-control" id="train"  placeholder="Enter Train">
+          <label for="">Train</label>
+          <input  type="text" class="form-control" id="train"  placeholder="Enter Train">
         </div>
         <div class="form-group">
-          <label for="destination">Destination</label>
-          <input type="destination" class="form-control" id="destination" placeholder="Destination">
+          <label for="">Destination</label>
+          <input type="text" class="form-control" id="destination" placeholder="Destination">
         </div>
         <div class="form-group">
-            <label for="time">First Train Time</label>
-            <input  class="form-control" id="time"  placeholder="Enter military time">
+            <label for="">First Train Time</label>
+            <input  type="text" class="form-control" id="time"  placeholder="Enter military time">
         </div>
         <div class="form-group">
-            <label for="interval">Frequency </label>
-            <input  class="form-control" id="interval"  placeholder="Enter Frequency in min">
+            <label for="">Frequency </label>
+            <input type="text" class="form-control" id="interval"  placeholder="Enter Frequency in min">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-primary" id="addSubmit">Submit</button>
       </form>
  </div>
 </div>
@@ -111,6 +75,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.js"></script>
     <script src="assets/javascript/app.js"></script>
 </body>
 </html>
