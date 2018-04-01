@@ -48,12 +48,17 @@ var train= childSnapshot.val().name;
 var destination = childSnapshot.val().place;
 var time = childSnapshot.val().ftrain;
 var interval = childSnapshot.val().freq;
-// create a var train and related with actual time
 
-var timeConv = moment(train, "HH:mm");
+// create a var train and related with actual time
+var timeConv = moment(time, "HH:mm");
 console.log(timeConv);
 var timeNow = moment().format("HH:mm");
 console.log("TNow:"+timeNow);
+
+//relate input gap with current time
+var timeDif = moment().diff(moment(timeConv), "minutes");
+console.log(time);
+console.log("Difference in Time: " + timeDif);
 
 
 
