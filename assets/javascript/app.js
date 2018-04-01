@@ -52,6 +52,8 @@ var interval = childSnapshot.val().freq;
 
 var timeConv = moment(train, "HH:mm");
 console.log(timeConv);
+var timeNow = moment().format("HH:mm");
+console.log("TNow:"+timeNow);
 
 
 
