@@ -60,8 +60,13 @@ var timeDif = moment().diff(moment(timeConv), "minutes");
 console.log(time);
 console.log("Difference in Time: " + timeDif);
 
+//how many time left
+var timeLeft = timeDif % interval;
 
+//minutes between times to see diferense
+var minBe = interval - timeLeft;
 
-
-
+//nextTrain diplay it in dom
+var nextTrain = moment().add(minBe, "minutes").format("HH:mm");
+$("#table>tbody").append("<tr><th scope='row'>"+train+"</th></tr>");
 });
