@@ -68,5 +68,9 @@ var minBe = interval - timeLeft;
 
 //nextTrain diplay it in dom
 var nextTrain = moment().add(minBe, "minutes").format("HH:mm");
-$("#table>tbody").append("<tr><th scope='row'>"+train+"</th></tr>");
+$("#table>tbody").append("<tr><td>"+train+"</td><td>"+destination+"</td>"+"</td><td>"+nextTrain+"</td>"+"</td><td>"+minBe+"</td></tr>");
+// $("#table>tbody").append("<td>"+destination+"</td>");
+// $("#table>tbody").append("<td>"+nextTrain+"</td>");
+// $("#table>tbody").append("<td>"+minBe+"</td>");
+
 });
